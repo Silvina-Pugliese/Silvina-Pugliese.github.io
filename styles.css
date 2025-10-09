@@ -14,7 +14,7 @@ html,body{height:100%;background:#fff;color:#222;font-family:var(--base-font);li
 header.card{display:flex;gap:20px;align-items:center}
 .intro{flex:1;min-width:0}
 .name{font-size:34px;font-weight:600;color:#0f1720;margin-bottom:6px}
-.bio{font-size:16px;color:#333;margin-bottom:12px}
+.bio{font-size:17px;color:#333;margin-bottom:12px}
 .links{font-size:14px}
 .links a{color:var(--accent-color);text-decoration:none;margin-right:10px}
 .profile-wrap{flex:0 0 160px;display:flex;justify-content:flex-end}
