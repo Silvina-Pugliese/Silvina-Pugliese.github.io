@@ -1,261 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Dr. Silvina Pugliese">
   <title>Dr. Silvina Pugliese</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <!-- Hero Section -->
+
+<body id="top">
+
+  <!-- NAV -->
+
+  <nav>
+
+    <a href="#top" class="nav-name">
+      Dr. Silvina Pugliese
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contributions">Contributions</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+    </ul>
+
+    <div class="nav-hamburger" onclick="document.getElementById('drawer').classList.add('open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+
+  <div class="nav-drawer" id="drawer">
+
+    <span class="nav-close" onclick="document.getElementById('drawer').classList.remove('open')">
+      Close ✕
+    </span>
+
+    <a href="#experience" onclick="document.getElementById('drawer').classList.remove('open')">
+      Experience
+    </a>
+
+    <a href="#contributions" onclick="document.getElementById('drawer').classList.remove('open')">
+      Contributions
+    </a>
+
+    <a href="#testimonials" onclick="document.getElementById('drawer').classList.remove('open')">
+      Testimonials
+    </a>
+
+  </div>
+
+  <!-- HERO -->
+
   <section class="hero">
-    <div class="hero-content">
-      <img src="img/profile.png" alt="Dr. Silvina Pugliese" class="profile-image">
-      <h1>Dr. Silvina Pugliese</h1>
-      <div class="tagline">Performance Analytics Specialist</div>
-      <p class="bio">
-        <em>Data and information: there is too much of it. Making sense of information and creating value with it is what really matters. That's a deeply human endeavour.</em>
-      </p>
-      
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/silvina-pugliese/" target="_blank" class="social-link">
-          <i data-lucide="linkedin" width="20" height="20"></i>
-          LinkedIn
-        </a>
-        <a href="https://thinkdatalab.substack.com/" target="_blank" class="social-link">
-          <i data-lucide="book-open" width="20" height="20"></i>
-          Newsletter
-        </a>
-        <a href="https://www.youtube.com/@silvina-pugliese" target="_blank" class="social-link">
-          <i data-lucide="youtube" width="20" height="20"></i>
-          YouTube
-        </a>
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <h1>Dr. Silvina Pugliese</h1>
+
+        <div class="tagline">
+          Performance Analytics Specialist
+        </div>
+
+        <p class="bio">
+          <em>
+            Data and information: there is too much of it. Making sense of the most relevant information and creating value with it is what really matters, and that's a deeply human endeavour.
+          </em>
+        </p>
+
+        <div class="social-links">
+
+          <a href="https://www.linkedin.com/in/silvina-pugliese/" target="_blank" class="social-link">
+            LinkedIn
+          </a>
+
+          <a href="https://thinkdatalab.substack.com/" target="_blank" class="social-link">
+            Newsletter
+          </a>
+
+          <a href="https://www.youtube.com/@silvina-pugliese" target="_blank" class="social-link">
+            YouTube
+          </a>
+
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- Experience Section -->
-  <section class="section">
+  <!-- EXPERIENCE + EDUCATION + VOLUNTEERING -->
+
+  <section class="section alt" id="experience">
+
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Experience</h2>
-      </div>
-      
-      <div class="timeline">
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">Performance Analytics Specialist</h3>
-            <div class="timeline-meta">Current</div>
-            <p class="timeline-description"></p>
+      <div class="two-col">
+
+        <!-- LEFT COLUMN -->
+
+        <div>
+
+          <div class="section-header">
+            <h2 class="section-title">Experience</h2>
           </div>
+
+          <div class="timeline">
+
+            <div class="timeline-item">
+
+              <div class="timeline-year">Current</div>
+
+              <div class="timeline-title-row">
+                <span class="timeline-dot"></span>
+                <span class="timeline-title">
+                  Performance Analytics Specialist
+                </span>
+              </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+              <div class="timeline-year">1.5 years</div>
+
+              <div class="timeline-title-row">
+                <span class="timeline-dot"></span>
+                <span class="timeline-title">
+                  Data Analytics Consultant
+                </span>
+              </div>
+
+              <div class="timeline-meta">
+                Helping small businesses and domain experts leverage AI tools and data analytics to drive growth and efficiency.
+              </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+              <div class="timeline-year">5 years</div>
+
+              <div class="timeline-title-row">
+                <span class="timeline-dot"></span>
+                <span class="timeline-title">
+                  Senior Data Analyst
+                </span>
+              </div>
+
+              <div class="timeline-meta">
+                Delivered and led data insights initiatives that addressed real-world problems in collaboration with multiple stakeholders.
+              </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+              <div class="timeline-year">
+                Victoria University of Wellington · 3.5 years
+              </div>
+
+              <div class="timeline-title-row">
+                <span class="timeline-dot"></span>
+                <span class="timeline-title">
+                  PhD Researcher
+                </span>
+              </div>
+
+              <div class="timeline-meta">
+                Conducted advanced research in laser Physics with publications in top peer-reviewed journals, developing strong analytical and problem-solving skills.
+              </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+              <div class="timeline-year">1 year</div>
+
+              <div class="timeline-title-row">
+                <span class="timeline-dot"></span>
+                <span class="timeline-title">
+                  Marie Skłodowska-Curie Actions Researcher
+                </span>
+              </div>
+
+              <div class="timeline-meta">
+                Early stage researcher contributing to cutting-edge reseach at the University of Bergen in Norway.
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">Data Analytics Consultant</h3>
-            <div class="timeline-meta">1.5 years</div>
-            <p class="timeline-description">Helping small businesses and domain experts leverage AI tools and data analytics to drive growth and efficiency.</p>
+        <!-- RIGHT COLUMN -->
+
+        <div>
+
+          <!-- EDUCATION -->
+
+          <div class="section-header">
+            <h2 class="section-title">Education</h2>
           </div>
-        </div>
-        
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">Senior Data Analyst</h3>
-            <div class="timeline-meta">5 years</div>
-            <p class="timeline-description">Delivered and led data insights initiatives that addressed real-world problems in collaboration with multiple stakeholders.</p>
+
+          <div class="timeline">
+
+            <div class="timeline-item">
+
+              <div class="timeline-title-row">
+                <span class="timeline-dot"></span>
+                <span class="timeline-title">
+                  PhD in Physics
+                </span>
+              </div>
+
+              <div class="timeline-meta">
+                Victoria University of Wellington, New Zealand
+              </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+              <div class="timeline-title-row">
+                <span class="timeline-dot"></span>
+                <span class="timeline-title">
+                  Master in Physics
+                </span>
+              </div>
+
+              <div class="timeline-meta">
+                Instituto Balseiro, Argentina
+              </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+              <div class="timeline-title-row">
+                <span class="timeline-dot"></span>
+                <span class="timeline-title">
+                  Chemical Engineer
+                </span>
+              </div>
+
+              <div class="timeline-meta">
+                Universidad Nacional de Mar del Plata, Argentina
+              </div>
+
+            </div>
+
           </div>
-        </div>
-        
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">PhD Researcher</h3>
-            <div class="timeline-meta">Victoria University of Wellington · 3.5 years</div>
-            <p class="timeline-description">Conducted advanced research in laser Physics with publications in top peer-reviewed journals, developing strong analytical and problem-solving skills.</p>
+
+          <!-- VOLUNTEERING -->
+
+          <div style="margin-top: 72px;">
+
+            <div class="section-header">
+              <h2 class="section-title" style="font-size: 38px;">
+                Volunteering
+              </h2>
+            </div>
+
+            <div class="timeline">
+
+              <div class="timeline-item">
+
+                <div class="timeline-year">
+                  Jan 2019 – Jan 2020
+                </div>
+
+                <div class="timeline-title-row">
+                  <span class="timeline-dot"></span>
+                  <span class="timeline-title">
+                    Coding Club Leader
+                  </span>
+                </div>
+
+                <div class="timeline-meta">
+                  Karori Library, Wellington
+                </div>
+
+              </div>
+
+              <div class="timeline-item">
+
+                <div class="timeline-year">
+                  April 2019 – Present
+                </div>
+
+                <div class="timeline-title-row">
+                  <span class="timeline-dot"></span>
+                  <span class="timeline-title">
+                    R-Ladies Wellington Chapter Lead
+                  </span>
+                </div>
+
+                <div class="timeline-meta">
+                  R-Ladies Global
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
+
         </div>
-        
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">Marie Skłodowska-Curie Actions Researcher</h3>
-            <div class="timeline-meta">1 year</div>
-            <p class="timeline-description">Early stage researcher contributing to cutting-edge reseach at the University of Bergen in Norway.</p>
-          </div>
-        </div>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- Education Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Education</h2>
-      </div>
-      
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">PhD in Physics</h3>
-            <div class="timeline-meta">Victoria University of Wellington, New Zealand</div>
-          </div>
-        </div>
-        
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">Master in Physics</h3>
-            <div class="timeline-meta">Instituto Balseiro, Argentina</div>
-          </div>
-        </div>
-        
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3 class="timeline-title">Chemical Engineer</h3>
-            <div class="timeline-meta">Universidad Nacional de Mar del Plata, Argentina</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- CONTRIBUTIONS -->
 
-  <!-- Content Section (Writing & Podcast) -->
-  <section class="section">
+  <section class="section" id="contributions">
+
     <div class="container">
+
       <div class="section-header">
-        <h2 class="section-title">Latest Contributions</h2>
-        <p class="section-subtitle">A selection of Silvina’s latest podcasts, presentations, and articles</p>
+
+        <h2 class="section-title">
+          Latest Contributions
+        </h2>
+
+        <p class="section-subtitle">
+          A selection of Silvina’s latest podcasts, presentations, and articles
+        </p>
+
       </div>
-      
+
       <div class="content-grid">
+
         <div class="content-card">
+
           <img src="img/episode1.jpeg" alt="Podcast episode" class="content-image">
+
           <div class="content-body">
+
             <h3 class="content-title">
-              <a href="https://www.youtube.com/watch?v=jmWYD7fs5yo" target="_blank">How AI Is Helping Us Think Differently and Innovate</a>
+              <a href="https://www.youtube.com/watch?v=jmWYD7fs5yo" target="_blank">
+                How AI Is Helping Us Think Differently and Innovate
+              </a>
             </h3>
-            <p class="content-meta">Think Data Lab Podcast · with Bill Schmarzo</p>
+
+            <p class="content-meta">
+              Think Data Lab Podcast · with Bill Schmarzo
+            </p>
+
           </div>
+
         </div>
-        
+
         <div class="content-card">
+
           <img src="img/episode2.jpeg" alt="Podcast episode" class="content-image">
+
           <div class="content-body">
+
             <h3 class="content-title">
-              <a href="https://www.youtube.com/watch?v=HpkgS3LV1_g" target="_blank">Uncovering the True Value of Data and Business Collaboration</a>
+              <a href="https://www.youtube.com/watch?v=HpkgS3LV1_g" target="_blank">
+                Uncovering the True Value of Data and Business Collaboration
+              </a>
             </h3>
-            <p class="content-meta">Think Data Lab Podcast · with Mark Stouse</p>
+
+            <p class="content-meta">
+              Think Data Lab Podcast · with Mark Stouse
+            </p>
+
           </div>
+
         </div>
-        
+
         <div class="content-card">
+
           <img src="img/podcast.png" alt="Podcast appearance" class="content-image">
+
           <div class="content-body">
+
             <h3 class="content-title">
-              <a href="https://www.iheart.com/podcast/269-new-zealand-student-life-286908550/" target="_blank">Turning Numbers into Answers</a>
+              <a href="https://www.iheart.com/podcast/269-new-zealand-student-life-286908550/" target="_blank">
+                Turning Numbers into Answers
+              </a>
             </h3>
-            <p class="content-meta">New Zealand Student Life podcast · Host: Buddhika ND</p>
+
+            <p class="content-meta">
+              New Zealand Student Life podcast · Host: Buddhika ND
+            </p>
+
           </div>
+
         </div>
-        
+
         <div class="content-card">
+
           <img src="img/sandbox_presentation_24_09_25.png" alt="AI Sandbox presentation" class="content-image">
+
           <div class="content-body">
+
             <h3 class="content-title">
-              <a href="https://aisandbox.org.nz/" target="_blank">Making the Most of Tools Like ChatGPT for Small Businesses</a>
+              <a href="https://aisandbox.org.nz/" target="_blank">
+                Making the Most of Tools Like ChatGPT for Small Businesses
+              </a>
             </h3>
-            <p class="content-meta">September 2025 · Nelson AI Sandbox</p>
+
+            <p class="content-meta">
+              September 2025 · Nelson AI Sandbox
+            </p>
+
           </div>
+
         </div>
-        
+
         <div class="content-card">
+
           <img src="img/wids.png" alt="WiDS NZ presentation" class="content-image">
+
           <div class="content-body">
+
             <h3 class="content-title">
-              <a href="https://ecs.wgtn.ac.nz/Events/WiDSNZ2025/Programme" target="_blank">Lessons Learned in Data Analytics</a>
+              <a href="https://ecs.wgtn.ac.nz/Events/WiDSNZ2025/Programme" target="_blank">
+                Lessons Learned in Data Analytics
+              </a>
             </h3>
-            <p class="content-meta">August 2025 · Women in Data Science New Zealand</p>
+
+            <p class="content-meta">
+              August 2025 · Women in Data Science New Zealand
+            </p>
+
           </div>
+
         </div>
 
         <div class="content-card">
+
           <img src="img/newsletter2.jpg" alt="Newsletter article" class="content-image">
-          <div class="content-body">
-            <h3 class="content-title">
-              <a href="https://thinkdatalab.substack.com/p/indicatives-of-purpose" target="_blank">Indicatives of Purpose</a>
-            </h3>
-            <p class="content-meta">August 2025 · Think Data Lab Newsletter</p>
-          </div>
-        </div>
 
-        <div class="content-card">
-          <img src="img/Rladies.jpg" alt="Newsletter article" class="content-image">
           <div class="content-body">
+
             <h3 class="content-title">
-              <a href="https://www.meetup.com/rladies-wellington/" target="_blank">R-Ladies Chapter Lead</a>
+              <a href="https://thinkdatalab.substack.com/p/indicatives-of-purpose" target="_blank">
+                Indicatives of Purpose
+              </a>
             </h3>
-            <p class="content-meta">2024 · Organisation of Presentations at R-Ladies Wellington, New Zealand</p>
+
+            <p class="content-meta">
+              August 2025 · Think Data Lab Newsletter
+            </p>
+
           </div>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="section">
+  <!-- TESTIMONIALS -->
+
+  <section class="section" id="testimonials">
+
     <div class="container">
+
       <div class="section-header">
-        <h2 class="section-title">What People Say</h2>
+        <h2 class="section-title">
+          What People Say
+        </h2>
       </div>
-      
+
       <div class="testimonials-grid">
 
         <div class="testimonial-card">
-          <p class="testimonial-quote">"Dr Silvina Pugliese's compelling and thought-provoking presentation on "How Small Businesses Can Make The Most Of Using AI Tools" was a highlight of our speaker calendar this year at the Nelson AI Sandbox.  Her practical, incisive and clear-minded view of how to use AI meant our audience was highly satisfied with this session. We want to thank Dr Pugliese for bringing us a brainy yet approachable view on how to use data analysis techniques, combined with deep knowledge of GPTs, to our community."</p>
-          <div class="testimonial-author">— Richard Brudvik-Lindner, Chief Executive/General Manager, Nelson AI Sandbox</div>
+
+          <p class="testimonial-quote">
+            "Dr Silvina Pugliese's compelling and thought-provoking presentation on 'How Small Businesses Can Make The Most Of Using AI Tools' was a highlight of our speaker calendar this year at the Nelson AI Sandbox.  Her practical, incisive and clear-minded view of how to use AI meant our audience was highly satisfied with this session. We want to thank Dr Pugliese for bringing us a brainy yet approachable view on how to use data analysis techniques, combined with deep knowledge of GPTs, to our community."
+          </p>
+
+          <div class="testimonial-author">
+            — Richard Brudvik-Lindner, Chief Executive/General Manager, Nelson AI Sandbox
+          </div>
+
         </div>
 
         <div class="testimonial-card">
-          <p class="testimonial-quote">"Honest, helpful advice. Silvina is a great listener who gave advice specific to my situation and more general advice also."</p>
-          <div class="testimonial-author">— Coaching Participant</div>
+
+          <p class="testimonial-quote">
+            "Silvina displays a clear passion for data and sees the important role it can play in better futures for people and society. She 'walks the talk' with her volunteer activities in data and coding education, and she is always looking for ways to use her skills productively."
+          </p>
+
+          <div class="testimonial-author">
+            — Former Supervisor
+          </div>
+
         </div>
-        
+
         <div class="testimonial-card">
-          <p class="testimonial-quote">"Kia ora Silvina, it was a good learning and chatting with you this afternoon. Your Business Analytics insights and experiences motivate me to keep involved in the industry."</p>
-          <div class="testimonial-author">— Presentation Attendee</div>
+
+          <p class="testimonial-quote">
+            "Honest, helpful advice. Silvina is a great listener who gave advice specific to my situation and more general advice also."
+          </p>
+
+          <div class="testimonial-author">
+            — Coaching Participant
+          </div>
+
         </div>
-        
+
         <div class="testimonial-card">
-          <p class="testimonial-quote">"I'm currently pursuing the Master of Professional Business Analysis and your posts are greatly helpful!"</p>
-          <div class="testimonial-author">— Conference Attendee</div>
+
+          <p class="testimonial-quote">
+            "Kia ora Silvina, it was a good learning and chatting with you this afternoon. Your Business Analytics insights and experiences motivate me to keep involved in the industry."
+          </p>
+
+          <div class="testimonial-author">
+            — Presentation Attendee
+          </div>
+
         </div>
-        
+
         <div class="testimonial-card">
-          <p class="testimonial-quote">"Hello Silvina, I really enjoyed your presentation on the lessons learned in data analytics at the WiDS conference."</p>
-          <div class="testimonial-author">— Conference Attendee</div>
+
+          <p class="testimonial-quote">
+            "I'm currently pursuing the Master of Professional Business Analysis and your posts are greatly helpful!"
+          </p>
+
+          <div class="testimonial-author">
+            — Conference Attendee
+          </div>
+
         </div>
-        
+
         <div class="testimonial-card">
-          <p class="testimonial-quote">"Hi Silvina, thank you for your insightful talk yesterday, I really liked your talk."</p>
-          <div class="testimonial-author">— Conference Attendee</div>
+
+          <p class="testimonial-quote">
+            "Hello Silvina, I really enjoyed your presentation on the lessons learned in data analytics at the WiDS conference."
+          </p>
+
+          <div class="testimonial-author">
+            — Conference Attendee
+          </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
+  <!-- FOOTER -->
 
-  <!-- Footer -->
   <footer>
+    <p>&copy; 2025 Dr. Silvina Pugliese. All rights reserved.</p>
   </footer>
+
+  <script>
+
+    window.addEventListener('resize', function () {
+
+      if (window.innerWidth > 700) {
+        document.getElementById('drawer').classList.remove('open');
+      }
+
+    });
+
+  </script>
 
 </body>
 </html>
