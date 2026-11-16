@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://silvina-pugliese.github.io/sitemap.xml
