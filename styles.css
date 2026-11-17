@@ -39,6 +39,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
+  overflow-x: hidden;
 }
 
 body {
@@ -254,6 +255,14 @@ nav .links a:not(.nav-cta):hover::after {
   border-color: var(--vio);
   color: var(--bg);
   text-decoration: none;
+}
+
+/* Button groups: space between buttons */
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* Secondary buttons */
@@ -1110,19 +1119,39 @@ footer {
     letter-spacing: 0.09em;
   }
 
+  /* Three tidy, equal-width tabs; newsletter button hidden on mobile */
   nav .links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    display: flex;
+    gap: 0.5rem;
   }
 
   nav .links a:not(.nav-cta) {
-    font-size: 0.9rem;
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 0.88rem;
+    padding: 0.65rem 0.4rem;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: rgba(245, 237, 224, 0.04);
+  }
+
+  nav .links a:not(.nav-cta)::after {
+    display: none;
   }
 
   nav .nav-cta {
-    grid-column: 1 / -1;
-    text-align: center;
+    display: none;
+  }
+
+  /* Intro card: straight, not tilted */
+  .note {
+    --rot: 0deg;
+    max-width: none;
+  }
+
+  /* Keep the background glow inside the screen */
+  .hero::before {
+    inset: -3rem -12vw -1rem;
   }
 
   .hero {
@@ -1131,7 +1160,8 @@ footer {
 
   .btns {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    gap: 0.9rem;
   }
 
   .pill {
